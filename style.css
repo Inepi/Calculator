@@ -1,0 +1,49 @@
+
+#calContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#middleRow {
+    display: flex;
+    justify-content: center;
+}
+
+#columnOne {
+    display: flex;
+    flex-direction: column;
+}
+
+#columnTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+#columnThree {
+    display: flex;
+    flex-direction: column;
+}
+
+#columnFour {
+    display: flex;
+    flex-direction: column;
+}
+
+#bottomRow {
+    display: flex;
+    flex-direction: row;
+}
+#results {
+
+}
+
+#numbers {
+
+}
+
+#functions {
+    
+}
