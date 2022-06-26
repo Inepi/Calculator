@@ -1,8 +1,26 @@
 
+let resultString = '';
+let num1 = 0;
+let num2 = 0;
+let runningTotal = 0;
+let regEx = /\d/;
+
+const results = document.querySelector('#results');
+const resultsDisplay = document.createElement('div');
+
 const buttons = document.querySelectorAll('button')
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            display(button.id);
+            if(regEx.test(button.id) == true) {
+            resultString += button.id; 
+            resultsDisplay.textContent = resultString;
+            results.appendChild(resultsDisplay);
+        }
+            else if(regEx.test(button.id) == false) {
+            alert('This is now false')
+            num1 = parseInt(resultString);
+            resultString = '';
+            }
         });
     });
 
